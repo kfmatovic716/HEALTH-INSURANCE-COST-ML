@@ -50,6 +50,7 @@ The growing emphasis of health equity has recently become a major priority in th
         <li>There were 1,435 duplicate rows that were deleted from the rawdata; Some of the records didnt just have one duplicate but 3 duplicates!</li>
         <li>There were <strong>total of 1,337 records in the new dataset</strong> after deleting duplicates</li>
     </ul>
+    <br>
     <li><strong>Univariate Analysis and Outlier Detection</strong></li>
     <ul>
         <img src="/images/age.png"/>
@@ -66,18 +67,20 @@ The growing emphasis of health equity has recently become a major priority in th
         <img src="/images/charges.png"/>
         <li>The health insurance cost, which serves as the target variable, is right-skewed, indicating that the majority of the population pays less than $14K. However, there is a notable presence of outliers, with some individuals incurring costs exceeding $34K.</li>
         <img src="/images/gender.png"/>
-        <li>Gender distribution has even distribution, approximately 50% are  males and 50% female participants</li>
+        <li>Population in gender feature is evenly distributed, approximately 50% are  males and 50% female participants</li>
         <img src="/images/smoker.png"/>
         <li>There is approximately 80% non-smoker population in this dataset, indicating class imbalance. </li>
         <li>The model might achieve high accuracy by mostly predicting “non-smoker,” but it would perform poorly in detecting smokers without adjustment</li>
         <img src="/images/region.png"/>
         <li>The regions of origin are evenly distributed among participants in this dataset, with the exception of the Southeast, which has a slightly higher representation</li>
     </ul>
+    <br>
     <li><strong>Bivariate Analysis</strong></li>
         <ul>
             <li></li>
             <li></li> 
         </ul>
+    <br>
     <li><strong>Multivariate Analysis</strong></li>
         <ul>
             <li></li>
