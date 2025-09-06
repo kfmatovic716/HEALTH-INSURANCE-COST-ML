@@ -91,10 +91,12 @@ The growing emphasis of health equity has recently become a major priority in th
             <li>The feature most strongly associated with health insurance costs is smoking status of a policyholder. This aligns with real-world evidence, as smokers face a significantly higher risk of developing life-threatening conditions such as cancer, stroke, and diabetes. As a result, they are classified as high-risk policyholders, making smoking status a critical factor in predicting insurance premiums.</li> 
             <li>The figure shows that smokers exhibit much greater variability in insurance premium costs, with charges reaching up to $60K, compared to non-smokers whose costs peak around $20K. The difference is significant, with smokers having a median cost of approximately $34K versus just $7K for non-smokers. </li>
             <li>The non-smokers have some outliers that are not much of a significant concern because they are still lower than the typical cost for smokers</li> 
-            <img src="/images/.png"/>
-            <li></li> 
-            <li></li> 
             <img src="/images/agevscharges.png"/>
+            <li></li> 
+            <li></li> 
+            <img src="/images/bmivscharges.png"/>
+             <li></li> 
+            <li></li>
         </ul>
 
 
