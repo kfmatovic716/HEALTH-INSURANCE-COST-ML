@@ -1,6 +1,6 @@
-# UC BERKELEY - CAPSTONE PROJECT IN MACHINE LEARNING & AI
+# UC BERKELEY - FINAL CAPSTONE PROJECT IN MACHINE LEARNING & AI
 
-<a href="https://github.com/kfmatovic716/HEALTH-INSURANCE-COST-ML.git"><h2 align="center">HEALTH INSURANCE COST PREDICTION & RISK ANALYSIS USING MACHINE LEARNING TECHNIQUES</h2></a>
+<h2 align='center'> <a href="https://github.com/kfmatovic716/HEALTH-INSURANCE-COST-ML.git">HEALTH INSURANCE COST PREDICTION & RISK ANALYSIS USING MACHINE LEARNING TECHNIQUES</a></h2>
 
 ![Logo](images/healthinsurance.jpeg)
 
@@ -89,7 +89,8 @@ The growing emphasis of health equity has recently become a major priority in th
             <li>Having children, gender and the region a policyholder is coming from are features that does not directly impact healthcare insurace charges.</li> 
             <img src="/images/smokervscharges.png"/>
             <li>The feature most strongly associated with health insurance costs is smoking status of a policyholder. This aligns with real-world evidence, as smokers face a significantly higher risk of developing life-threatening conditions such as cancer, stroke, and diabetes. As a result, they are classified as high-risk policyholders, making smoking status a critical factor in predicting insurance premiums.</li> 
-            <li></li> 
+            <li>The figure shows that smokers exhibit much greater variability in insurance premium costs, with charges reaching up to $60K, compared to non-smokers whose costs peak around $20K. The difference is significant, with smokers having a median cost of approximately $34K versus just $7K for non-smokers. </li>
+            <li>The non-smokers have some outliers that are not much of a significant concern because they are still lower than the typical cost for smokers</li> 
             <img src="/images/.png"/>
             <li></li> 
             <li></li> 
@@ -103,7 +104,6 @@ The growing emphasis of health equity has recently become a major priority in th
         </ul>
 </ul>
             
-
             
 ## BASELINE MODELLING USING MACHINE LEARNING ALGORITHMS
 
