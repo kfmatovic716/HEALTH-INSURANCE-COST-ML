@@ -39,9 +39,13 @@ The growing emphasis of health equity has recently become a major priority in th
     <li>children - number of children</li>
     <li>smoker - indicates if person is smoker (“yes”) or non-smoker (“no”)</li>
     <li>region -  US region where person resides</li>
-    <li>charges (target variable) - insurance premium price<</li>
+    <li>charges (target variable) - insurance premium price</li>
 </ul>
-        
+
+## DATA TRANSFORMATIONS
+<p>Utilized the map function by converting  all categorical variables (sex, region, and smoker)  into a numeric form. This allows them to be included in the correlation matrix to explore relationships with other features and also supports the modeling stage by ensuring compatibility with running machine learning algorithms.
+</p>
+
 ## EXPLORATORY DATA ANALYSIS (EDA)
 <ul>
     <li><strong>Missing Values and Duplicate Records</strong></li>
@@ -65,9 +69,12 @@ The growing emphasis of health equity has recently become a major priority in th
         <li>The 'number of children’ feature shows a right-skewed distribution. The majority of participants (approximately 575) reported having no children, followed by 324 participants with one child. The frequency declines progressively as the number of children increases, forming a long tail toward higher values. </li>
         <li>There were no outliers to be observed in this feature</li>
         <img src="/images/charges.png"/>
-        <li>The health insurance cost, which serves as the target variable, is right-skewed, indicating that the majority of the population pays less than $14K. However, there is a notable presence of outliers, with some individuals incurring costs exceeding $34K.</li>
+        <li>The health insurance charges, which serves as the target variable, is right-skewed, indicating that the majority of the population pays less than $14K. However, there is a notable presence of outliers, with some individuals incurring costs exceeding $34K.</li>
+        <li>The dataset have participants who have high premium charges, which are considered outliers. It is important to keep them because they usually reflect real people with unusual but valid health/risk profiles — e.g., older policyholders, smokers, or those with chronic conditions. A biased model may result and distort the true distribution of costs when excluded.</li> 
+        <li>Outliers are critical to model generalization especially with a classification task that identifies policyholders who are low and high risk. Eliminating these records could make the model less effective in recognizing the most important class. Outliers play a crucial role in business decision making, particularly since in this dataset they mostly represent high-premium policyholders (with costs above $34K). These cases not only influence premium pricing strategies but also help insurers anticipate and prepare for costly claims. </li>    
         <img src="/images/gender.png"/>
-        <li>Population in gender feature is evenly distributed, approximately 50% are  males and 50% female participants</li>
+        <li>Population in gender feature is evenly distributed, approximately 50% are  males and 50% female participants, which reduces bias in model training.</li>
+        <li>Regulators emphasize non-discriminatory models especially in sensitive domains like healthcare and insurance. A balanced distribution meets this ethical consideration and fairness requirement.</li>     
         <img src="/images/smoker.png"/>
         <li>There is approximately 80% non-smoker population in this dataset, indicating class imbalance. </li>
         <li>The model might achieve high accuracy by mostly predicting “non-smoker,” but it would perform poorly in detecting smokers without adjustment</li>
@@ -77,8 +84,16 @@ The growing emphasis of health equity has recently become a major priority in th
     <br>
     <li><strong>Bivariate Analysis</strong></li>
         <ul>
-            <li></li>
+            <img src="/images/corrmatrix.png"/>
+            <li>Based on the figure above, the top 3 features that have positive relationship and directly impacts healthcare insurance premium charges are: smoker (~80% correlation), age (~30%) and BMI (~20%) </li>
+            <li>Having children, gender and the region a policyholder is coming from are features that does not directly impact healthcare insurace charges.</li> 
+            <img src="/images/smokervscharges.png"/>
+            <li>The feature most strongly associated with health insurance costs is smoking status of a policyholder. This aligns with real-world evidence, as smokers face a significantly higher risk of developing life-threatening conditions such as cancer, stroke, and diabetes. As a result, they are classified as high-risk policyholders, making smoking status a critical factor in predicting insurance premiums.</li> 
             <li></li> 
+            <img src="/images/.png"/>
+            <li></li> 
+            <li></li> 
+            <img src="/images/.png"/>
         </ul>
     <br>
     <li><strong>Multivariate Analysis</strong></li>
@@ -88,13 +103,13 @@ The growing emphasis of health equity has recently become a major priority in th
         </ul>
 </ul>
             
-## DATA TRANSFORMATIONS
+
             
-## MODELLING USING MACHINE LEARNING ALGORITHMS
+## BASELINE MODELLING USING MACHINE LEARNING ALGORITHMS
 
 ## EVALUATION
 
-## RECOMMENDATIONS TO CLIENT
 
-## FUTURE RECOMMENDATIONS - IMPROVEMENTS ON DATA QUALITY AND PERFORMANCE OF THE MODELS
+
+
 
