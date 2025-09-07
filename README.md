@@ -93,21 +93,24 @@ The growing emphasis of health equity has recently become a major priority in th
             <li>The non-smokers have some outliers that are not much of a significant concern because they are still lower than the typical cost for smokers</li> 
             <img src="/images/agevscharges.png"/>
             <li>The red regression line illustrates a positive correlation between the insurance charges and the policyholder's age and insurance tend to increase as the policyholder gets older.</li> 
-            <li>At every age level, insurance costs vary widely, ranging from about $1,000 to $60,000. These variations are likely driven by additional factors such as smoking status, chronic health conditions, and BMI. In general, younger policyholders (age < 35) have lower charges but some charges were high mainly due to some outliers, who might be a smoker, has high BMI or has chronic disease. </li> 
+            <li>At every age level, insurance charges vary widely, ranging from about $1,000 to $60,000. These variations are likely driven by additional factors such as smoking status, chronic health conditions, and BMI. In general, younger policyholders (age < 35) have lower charges but some charges were high mainly due to some outliers, who might be a smoker, has high BMI or has chronic disease. </li> 
             <li>Although the trendline shows a steady increase with age, cost variations remain large among older policyholders (age > 50), indicating that not all older individuals pay high insurance premiums. </li>     
             <img src="/images/bmivscharges.png"/>
-             <li></li> 
-            <li></li>
+             <li>The regression line shows an upward trend and a shallow slope. This suggests that higher BMI is associated with higher insurance charges but does not appear to be a strong predictor of charges due to the shallow slope.</li> 
+            <li>Just like the relationship between age and insurance charges above, insurance charges vary widely at every BMI value, ranging from approximately $1,000 to over $60,000. It is likely that other factors such as smoker status, age and chronic diseases play a much significant role in determining costs.</li>
+            <li>Most policyholders fall in between approximately 20 to 35, where charges vary significantly. This suggests that showing that BMI is not a reliable standalone predictor of charges.</li> 
+            <li>Higher charges above $40K appear more frequently in BMI above 30. On the other hand, some with very high BMI are still in low charges. This again indicates that there are other factors that interacts with BMI in predicting charges.</li>
         </ul>
        <br>
     <li><strong>Multivariate Analysis</strong></li>
         <ul>
             <img src="/images/pairplot.png"/>
-            <li></li>
-            <li></li> 
+            <li>Across all ages, smokers consistenly incur higher charges than non-smokers. In general, older payholders pay more charges but with smoking status creates a significant difference than age alone.</li>
+            <li>Smokers with high BMI over 30 incur high charges (some over $60K). Non-smokers show less of a clear pattern since many with high BMI still fall in the low-to-mid insuarnce charge range. This means that smoking amplifies the effect of BMI on costs.</li> 
+            <li>There is no clear trend between age and BMI. In this dataset, age and BMI are independent. Smokers and non-smokers are scattered similarly across the BMI and age spectrum.</li>
+            <li>Smoking status is the strongest, most consistent driver of high insurance charges across all features. In almost every subplot, smokers (yellow) are shifted charges upwars compared to non-smokers which reinforces the idea that smoking status is a key driver in predicting insurance costs, more influential than age or BMI.</li>
         </ul>
 </ul>
-            
             
 ## MODELLING USING MACHINE LEARNING ALGORITHMS
 
