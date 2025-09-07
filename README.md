@@ -1,4 +1,4 @@
-# UC BERKELEY - FINAL CAPSTONE PROJECT IN MACHINE LEARNING & AI
+# UC BERKELEY - MACHINE LEARNING & AI CAPSTONE PROJECT
 
 <h2 align='center'> <a href="https://github.com/kfmatovic716/HEALTH-INSURANCE-COST-ML.git">HEALTH INSURANCE COST PREDICTION & RISK ANALYSIS USING MACHINE LEARNING TECHNIQUES</a></h2>
 
@@ -92,12 +92,21 @@ The growing emphasis of health equity has recently become a major priority in th
             <li>The figure shows that smokers exhibit much greater variability in insurance premium costs, with charges reaching up to $60K, compared to non-smokers whose costs peak around $20K. The difference is significant, with smokers having a median cost of approximately $34K versus just $7K for non-smokers. </li>
             <li>The non-smokers have some outliers that are not much of a significant concern because they are still lower than the typical cost for smokers</li> 
             <img src="/images/agevscharges.png"/>
-            <li></li> 
-            <li></li> 
+            <li>The red regression line illustrates a positive correlation between the insurance charges and the policyholder's age and insurance tend to increase as the policyholder gets older.</li> 
+            <li>At every age level, insurance costs vary widely, ranging from about $1,000 to $60,000. These variations are likely driven by additional factors such as smoking status, chronic health conditions, and BMI. In general, younger policyholders (age < 35) have lower charges but some charges were high mainly due to some outliers, who might be a smoker, has high BMI or has chronic disease.  </li> 
+            <li>Although the trendline shows a steady increase with age, cost variations remain large among older policyholders (age > 50), indicating that not all older individuals pay high insurance premiums. </li>     
             <img src="/images/bmivscharges.png"/>
              <li></li> 
             <li></li>
         </ul>
+    <br>
+    <li><strong>Multivariate Analysis</strong></li> 
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+            
+        
 
 
 
