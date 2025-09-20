@@ -116,8 +116,8 @@ The growing emphasis of health equity has recently become a major priority in th
 
 #### BASELINE MODEL: LINEAR REGRESSION (Predicting Health Insurance Charges)
 <ul>
-    <li>Coefficients [coef_results.csv](images/coef_results.csv)</li>
-    <li>Evaluation Metrics <img src="images/metrics_results"/> </li>
+    <li>Coefficients <iframe src="images/coef_results.csv" style="width:100%; height:400px;"></iframe></li>
+    <li>Evaluation Metrics <iframe src="images/metrics_results.csv" style="width:100%; height:400px;"></iframe>/> </li>
     <li></li>
 </ul>
 
