@@ -115,6 +115,11 @@ The growing emphasis of health equity has recently become a major priority in th
 ## MODELLING USING MACHINE LEARNING ALGORITHMS
 
 #### BASELINE MODEL: LINEAR REGRESSION (Predicting Health Insurance Charges)
+<ul>
+    <li>Coefficients [coef_results.csv](images/coef_results.csv)</li>
+    <li>Evaluation Metrics <img src="images/metrics_results"/> </li>
+    <li></li>
+</ul>
 
 ## CONCLUSION
 
