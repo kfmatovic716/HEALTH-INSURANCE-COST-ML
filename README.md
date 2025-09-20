@@ -116,8 +116,10 @@ The growing emphasis of health equity has recently become a major priority in th
 
 #### BASELINE MODEL: LINEAR REGRESSION (Predicting Health Insurance Charges)
 <ul>
-    <li>Coefficients <iframe src="images/coef_results.csv" style="width:100%; height:400px;"></iframe></li>
-    <li>Evaluation Metrics <iframe src="images/metrics_results.csv" style="width:100%; height:400px;"></iframe>/> </li>
+    <img src="/images/coef_results.png"/>
+    <li>Each coefficient is the expected dollar change in charges for a +1 unit increase in that feature, holding others constant. It shows how the prediction changes if you change just that one feature, while pretending everything else in the model stays the same. For example, when two people with the same features like age, gender, bmi, and number of children but one is a smoker and the other person is not, the model would predict a premium for the smoker to be $23k higher. </li>
+    <img src="/images/metrics_results.png"/>
+    <li> </li>
     <li></li>
 </ul>
 
