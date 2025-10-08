@@ -115,31 +115,31 @@ The growing emphasis of health equity has recently become a major priority in th
 ## MODELLING USING MACHINE LEARNING ALGORITHMS
 
 ### BASELINE MODEL: LINEAR REGRESSION (Predicting Health Insurance Charges)
-#### Coefficients
+### Coefficients
 <ul>
-    <img src="/images/coef_results.png" width="100" height="200"/>
+    <img src="/images/coef_results.png" width="200" height="300"/>
     <li>Each coefficient is the expected dollar change in charges for a +1 unit increase in that feature, holding others constant. It shows how the prediction changes if you change just that one feature, while pretending everything else in the model stays the same. For example, when two people with the same features like age, gender, bmi, and number of children but one is a smoker and the other person is not, the model would predict a premium for the smoker to be $23k higher. </li>
     <li>The intercept is not much meaningful to predict baseline charges when other features zero. In this insurance dataset, values of features like age, BMI and smoking status are very important in predicting health insurance charges. </li>
 <br>
 </ul>
 
-#### Evaluation Metrics
+### Evaluation Metrics
 <ul>
-    <img src="/images/metrics_results.png" width="200" height="300"/>
+    <img src="/images/metrics_results.png" width="300" height="400"/>
     <li>The model illustrates approximately 81% of the variation in insurance charges across individuals. The  differences in charges between policyholders can be accounted for by the features such as age, sex, BMI, children, and smoking status.</li>
     <li>Predictions on average are off by approximately $6k (RMSE test). For example if the true insurance charge for a policyholder is $4,000, the model will predict it as $10k. The model usually predicts within about $4k (MAE test) of the true value. Occasionally it misses by much more (like $10k+), which nudges the RMSE up to $6k. Since RMSE isn’t significantly different with MAE, those bigger errors are present but not overwhelming.  </li>
 </ul>
 
 ### RIDGE AND LASSO REGRESSION
-#### Coefficients
-<img src="/images/coefs_ridge_lasso.png"/>
+### Coefficients
+<img src="/images/coefs_ridge_lasso.png" width="400" height="500"/>
 <ul>
     <li>The coefficients are identical to the baseline model but slightly lower especially with the smoker status. This results into a lower predicted premium compared to the baseline</li>
     <li>In between Ridge and Lasso, Lasso appears to have an even lower coefficients, which will result into the lowest predicted premium compared to Ridge. </li>
 </ul>
 
-#### Evaluation Metrics
-<img src="/images/metrics_ridge_lasso.png"/>
+### Evaluation Metrics
+<img src="/images/metrics_ridge_lasso.png" width="400" height="500"/>
 <ul>
     <li>Based on the R2 score, there is no significant difference in overall fit. Both model explains approximately 73% of training variance ad 80% test variance, which is an excellent consistency.</li>
     <li>With Ridge having a higher R2 score on the test set (0.806 vs 0.802), it explains that Ridge can generalize new data slightly better than Lasso.</li>
