@@ -118,6 +118,7 @@ The growing emphasis of health equity has recently become a major priority in th
 ### Coefficients
 <ul>
     <img src="/images/coef_results.png" width="200" height="300"/>
+<br>    
     <li>Each coefficient is the expected dollar change in charges for a +1 unit increase in that feature, holding others constant. It shows how the prediction changes if you change just that one feature, while pretending everything else in the model stays the same. For example, when two people with the same features like age, gender, bmi, and number of children but one is a smoker and the other person is not, the model would predict a premium for the smoker to be $23k higher. </li>
     <li>The intercept is not much meaningful to predict baseline charges when other features zero. In this insurance dataset, values of features like age, BMI and smoking status are very important in predicting health insurance charges. </li>
 <br>
@@ -126,6 +127,7 @@ The growing emphasis of health equity has recently become a major priority in th
 ### Evaluation Metrics
 <ul>
     <img src="/images/metrics_results.png" width="300" height="400"/>
+<br>
     <li>The model illustrates approximately 81% of the variation in insurance charges across individuals. The  differences in charges between policyholders can be accounted for by the features such as age, sex, BMI, children, and smoking status.</li>
     <li>Predictions on average are off by approximately $6k (RMSE test). For example if the true insurance charge for a policyholder is $4,000, the model will predict it as $10k. The model usually predicts within about $4k (MAE test) of the true value. Occasionally it misses by much more (like $10k+), which nudges the RMSE up to $6k. Since RMSE isn’t significantly different with MAE, those bigger errors are present but not overwhelming.  </li>
 </ul>
@@ -147,8 +149,11 @@ The growing emphasis of health equity has recently become a major priority in th
     <li>In terms of regularization behavior, Ridge keeps all features but penalizes large coefficients, which indicated good multicollinearity. In contrast, Lasso can drive some coefficients to zero as seen on the coefficients results, where sex=0. Lasso is great for feature selection and interpretability but not the most optimal for prediction due to higher error and worst accuracy.</li>
 </ul>
 
-### CLASSIFICATION MODEL - LOGISTIC REGRESSION
+### PREDICTION MODEL SUMMARY RESULTS
+<img src="/images/predict_models.png" width="500" height="400"/>
+<p>The linear regression model is the best performing model due to its high predictive accuracy based on R2 test (0.8068), which explains the most variance in unseen data and yields the lowest prediction errors on average (RMSE & MAE). Ridge and Lasso does not improve performace to justify the regularization penalty. If the goal were to improve model stability and good multicollinearity, Ridge would be a solid choice but in terms of pure performance, Linear is the best model.  </p>
 
+### CLASSIFICATION MODEL - LOGISTIC REGRESSION
 
 <ul>
     <li></li>
@@ -158,6 +163,7 @@ The growing emphasis of health equity has recently become a major priority in th
 
 
 ### RECOMMENDATIONS ON BUSINESS APPLICATION
+
 
 ### FUTURE CONSIDERATIONS ON DATA QUALITY 
           
