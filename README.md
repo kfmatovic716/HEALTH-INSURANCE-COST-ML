@@ -177,10 +177,11 @@ The growing emphasis of health equity has recently become a major priority in th
 
 <p> </p>
 
-### FUTURE CONSIDERATIONS ON DATA QUALITY 
-          
+### FUTURE CONSIDERATIONS ON DATA QUALITY           
 <ul>
-    <li></li>
+    <li>Multiple duplicate records were identified in the data cleaning phase and have been removed from the dataset. To improve efficiency and reduce data processing time, such duplicate entries should not have been included in the data collection or reporting process.</li>
+    <li>Data quantity and quality are crucial in machine learning. Machine learning models “learn” by detecting patterns between features (inputs) and the target (output), which all originate from the dataset. The more samples that are high-quality and diverse given to the model, the more realistic, accurate and generalizable the predictions become. Complex models like logistic regression definitely need more data to create a reliable and stable model. The risk of overfitting can be reduced and improve coefficient stability. More samples than parameters are needed for the model to be stable. Lastly, larger dataset have statistical reliability and can capture all the real-world variability. Models used in this project could be improved with more dataset records in the future. </li>
+    <li>There was a class imbalance in the dataset used in the model (80% non-smoker / 20% smoker). A balanced dataset means both classes appear in roughly equal proportions (i.e., 50/50 or 60/40). Having balanced classes in logistic regression is crucial for the model to learn both classes fairly, produce unbiased coefficients, and make reliable predictions, especially for the minority class that often carries the most significance.</li>
 </ul>
 
 
