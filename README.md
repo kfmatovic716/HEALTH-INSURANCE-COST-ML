@@ -150,15 +150,21 @@ The growing emphasis of health equity has recently become a major priority in th
 </ul>
 
 ### PREDICTION MODEL SUMMARY RESULTS
-<img src="/images/predict_models.png" width="500" height="400"/>
+<img src="/images/predict_models.png" width="600" height="500"/>
 <p>The linear regression model is the best performing model due to its high predictive accuracy based on R2 test (0.8068), which explains the most variance in unseen data and yields the lowest prediction errors on average (RMSE & MAE). Ridge and Lasso does not improve performace to justify the regularization penalty. If the goal were to improve model stability and good multicollinearity, Ridge would be a solid choice but in terms of pure performance, Linear is the best model.  </p>
 
 ### CLASSIFICATION MODEL - LOGISTIC REGRESSION
 
 <ul>
-    <li></li>
-    <li></li>
-    <li></li>
+    <li>Based on the acccuracy score of 98.1% on test set and 95.9% on training set, the overall model performance is strong with excellent feature generalization to new and unseen data, no indication of overfitting and very low MSE errors (0.041 training vs 0.019 test), which means that the model makes a stable and consistent predections.</li>
+    
+<img src="/images/conf_matrix.png" width="500" height="500"/>
+    <li>Classification report shows class 0 as low-risk and class 1 as high-risk. With recall=0, the model does not miss high-risk patients, which is critical for determining premium costs and this can also be beneficial for other healthcare use cases. There were no false negatives so the model correctly identifies all high-risk patients.</li>
+    <li>The high-risk precision of 0.92 is slightly lower but still acceptable. It just means that a few low-risk patients were flagged as high-risk, which is safer than not being able to identify high-risk cases.</li>
+    
+<img src="/images/roc_curve.png" width="500" height="500"/>
+    <li>The ROC curve above shows a blue line that extends sharply toward the top-left corner, which indicates a high true positive rate (recall) even at a low false positive rate. This means the model can accurately distinguish between the two classes (low-risk and high-risk patients) with low chances of misclassification. </li>
+    <li>The AUC (Area Under the Curve) = 1.0 further confirms that the model achieves perfect discrimination, successfully identifying all positive (high-risk) and negative (low-risk) cases without error.</li>
 </ul>
 
 
