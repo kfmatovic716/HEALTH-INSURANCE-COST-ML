@@ -15,7 +15,7 @@ The growing emphasis of health equity has recently become a major priority in th
     <li>What factors strongly influence health insurance costs? </li>
 </ul>
 
-## GOALS 
+## 🎯 GOALS 
 <ul>
     <li><strong>Cost Prediction</strong> - Build a baseline predictive model using <strong>Linear Regression</strong>, then enhance performance using <strong>Ridge and Lasso Regression</strong>. Evaluate models using <strong>R-squared, Mean Absolute Error (MAE), and Mean Squared Error (MSE)</strong> metrics.</li>
     <li><strong>Risk Classification</strong> - Classify individuals into <strong>high-cost or low-cost</strong> categories using Logistic Regression, based on lifestyle features and/or predicted charges.
@@ -30,7 +30,7 @@ The growing emphasis of health equity has recently become a major priority in th
     <li><strong>DATA SIZE: </strong>The raw data has 7 features and 2,772 records in total</li>
 </ul>
 
-## DATA DESCRIPTIONS
+## 📋 DATA DESCRIPTIONS
 <p>The dataset contains the following features, along with their data types and corresponding descriptions: </p>
 <ul>
     <li>age - person’s age</li>
@@ -46,7 +46,7 @@ The growing emphasis of health equity has recently become a major priority in th
 <p>Utilized the map function by converting  all categorical variables (sex, region, and smoker)  into a numeric form. This allows them to be included in the correlation matrix to explore relationships with other features and also supports the modeling stage by ensuring compatibility with running machine learning algorithms.
 </p>
 
-## EXPLORATORY DATA ANALYSIS (EDA)
+## 📊 EXPLORATORY DATA ANALYSIS (EDA)
 <ul>
     <li><strong>Missing Values and Duplicate Records</strong></li>
     <ul>
@@ -112,7 +112,7 @@ The growing emphasis of health equity has recently become a major priority in th
         </ul>
 </ul>
             
-## MODELLING USING MACHINE LEARNING ALGORITHMS
+## 🛠️ MODELLING USING MACHINE LEARNING ALGORITHMS
 
 ### BASELINE MODEL: LINEAR REGRESSION (Predicting Health Insurance Charges)
 ### Coefficients
@@ -173,15 +173,19 @@ The growing emphasis of health equity has recently become a major priority in th
     <li>This model with 25% test size has a more favorable outcome in healthcare-related risk prediction because it maintains an excellent predictive power while showing slightly more realistic performance. It still captures all true high-risk patients, with only a small trade-off in false positives.</li>
 </ul>
 
-### RECOMMENDATIONS ON BUSINESS APPLICATION
+### TRANSLATING MODEL RESULTS ➡️ BUSINESS IMPACT 
 
-<p> </p>
+<ul>
+    <li>The regression models (Linear, Ridge, and Lasso) can be leveraged to optimize premium pricing strategies. Model findings indicate that smoking status, age, and BMI are the top predictors of insurance charges. These factors can be used to design tiered premium structures. For example, applying higher premiums for smokers or individuals with a BMI above 30. Data-driven pricing enables insurance providers to forecast claims more accurately and allocate financial reserves more efficiently.</li>
+    <li>The logistic regression model can enhance risk classification and customer segmentation. With 98% accuracy and 100% recall for high-risk classification, the model demonstrates a strong ability to accurately identify high-cost policyholders. Integrating this model into underwriting workflows would allow insurers to pre-screen applicants by risk level and use predictions to personalize policy offerings, such as recommending preventive coverage options. This segmentation approach can reduce unexpected claims, minimize underwriting errors, and support more informed decision-making. </li>
+</ul>
 
 ### FUTURE CONSIDERATIONS ON DATA QUALITY           
 <ul>
     <li>Multiple duplicate records were identified in the data cleaning phase and have been removed from the dataset. To improve efficiency and reduce data processing time, such duplicate entries should not have been included in the data collection or reporting process.</li>
     <li>Data quantity and quality are crucial in machine learning. Machine learning models “learn” by detecting patterns between features (inputs) and the target (output), which all originate from the dataset. The more samples that are high-quality and diverse given to the model, the more realistic, accurate and generalizable the predictions become. Complex models like logistic regression definitely need more data to create a reliable and stable model. The risk of overfitting can be reduced and improve coefficient stability. More samples than parameters are needed for the model to be stable. Lastly, larger dataset have statistical reliability and can capture all the real-world variability. Models used in this project could be improved with more dataset records in the future. </li>
     <li>There was a class imbalance in the dataset used in the model (80% non-smoker / 20% smoker). A balanced dataset means both classes appear in roughly equal proportions (i.e., 50/50 or 60/40). Having balanced classes in logistic regression is crucial for the model to learn both classes fairly, produce unbiased coefficients, and make reliable predictions, especially for the minority class that often carries the most significance.</li>
+    <li>It would be beneficial to include additional features in the dataset, particularly those that capture high-risk factors known to drive up health insurance premiums. Variables such as alcohol consumption, recreational drug use, and occupational risk could provide deeper insights into the underlying causes of elevated insurance costs.</li>
 </ul>
 
 
